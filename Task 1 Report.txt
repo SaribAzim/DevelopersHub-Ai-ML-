@@ -1,0 +1,12 @@
+Task 1 Report:
+This task focused on learning the basic workflow of machine learning by predicting diseases such as diabetes and heart disease using structured data from the UCI Machine Learning Repository.
+
+The preprocessing phase ensured the dataset was ready for training. Missing values were handled by replacing them with either the mean or median depending on the distribution of the feature. Numerical variables were normalized between zero and one to ensure that features on different scales contributed equally to the model. Categorical variables were transformed into numerical form using label encoding. These steps created a balanced dataset suitable for machine learning models.
+
+Exploratory Data Analysis was performed to better understand the dataset. The describe function provided useful statistics such as mean, standard deviation, and distribution of values. A correlation heatmap was generated to visualize relationships between features and the target variable. This step helped identify which features had stronger influence on disease prediction.
+
+Two models were trained on the processed dataset. Logistic Regression was chosen as a simple yet effective baseline classifier. Random Forest was selected as a more complex model capable of handling feature interactions and non-linear decision boundaries. Both models were trained and tested on the dataset.
+
+The models were evaluated using accuracy as the main metric. Logistic Regression provided a reasonable accuracy, but Random Forest achieved higher performance. The difference highlighted the importance of model selection when dealing with structured health records.
+
+In conclusion, this task demonstrated how proper preprocessing and exploratory analysis are essential in preparing data for machine learning. The results confirmed that while Logistic Regression is a good starting point, Random Forest performed better, making it the preferred model for this dataset. This workflow represents a complete introductory pipeline for disease prediction using structured health data.

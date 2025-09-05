@@ -1,0 +1,13 @@
+Task 2 Report:
+
+This task focused on applying deep learning for image-based breast cancer detection using a subset of the Breast Cancer Histopathological dataset. The dataset contained two classes which were benign and malignant tissue samples.
+
+The preprocessing phase involved resizing all images to 128 by 128 pixels to maintain consistency in dimensions. Pixel values were normalized to a range between zero and one to allow faster convergence of the neural network during training. This ensured that the model learned efficiently without being affected by differences in pixel intensity scales.
+
+A simple Convolutional Neural Network was designed with three convolutional layers. Each layer extracted features from the images, and pooling layers were added to reduce dimensionality while retaining important information. The network was followed by dense layers for classification into benign or malignant. The model was trained for ten epochs on the dataset.
+
+The evaluation was based on accuracy and loss curves. The CNN demonstrated strong performance, showing that even a simple network is capable of learning useful patterns from histopathology images. The curves confirmed that the network was able to generalize well to the validation set.
+
+A transfer learning experiment was also performed using the VGG16 model pretrained on ImageNet. The pretrained layers served as a feature extractor, and additional layers were added for classification. The VGG16 model significantly improved accuracy compared to the simple CNN. This confirmed that transfer learning is especially effective when the dataset size is limited, as it allows the model to benefit from features learned from large and diverse datasets.
+
+In conclusion, this task showed that deep learning can accurately classify breast cancer histopathology images. A custom CNN provided reasonable results, while VGG16 transfer learning delivered superior performance. This exercise demonstrated the value of convolutional networks and transfer learning in medical image analysis.

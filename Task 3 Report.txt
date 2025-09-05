@@ -1,0 +1,11 @@
+Task 3 Report:
+
+This task involved building deep learning models for two medical image classification problems which were skin cancer detection and pneumonia detection.
+
+For skin cancer detection, a subset of the ISIC dataset was used. Images were resized to 128 by 128 pixels and normalized between zero and one. Transfer learning was applied using the ResNet50 model pretrained on ImageNet. The final layers of ResNet50 were fine-tuned for binary classification. The model was trained using binary crossentropy as the loss function and the Adam optimizer. The evaluation metric was accuracy, and the results showed strong performance in distinguishing between cancerous and non-cancerous lesions.
+
+For pneumonia detection, a subset of the Kaggle chest X-ray dataset was used. Images underwent the same preprocessing steps as the skin cancer dataset. A simple Convolutional Neural Network with two convolutional layers was built and trained from scratch. The model was trained using binary crossentropy and the Adam optimizer. Evaluation was done using accuracy and the Receiver Operating Characteristic curve. The model achieved good results and the ROC curve confirmed its effectiveness in separating pneumonia cases from normal chest x-rays.
+
+The comparison of the two tasks demonstrated the strengths of different approaches. For complex tasks such as skin lesion analysis, transfer learning with a powerful model like ResNet50 provided superior accuracy by leveraging previously learned image features. For simpler tasks such as pneumonia detection, a lightweight CNN was sufficient to achieve strong results without requiring a large pretrained model.
+
+In conclusion, this task highlighted the adaptability of deep learning approaches for medical imaging. Transfer learning proved valuable for complex image classification problems, while simple CNNs remained effective for relatively straightforward tasks. Both models successfully achieved their objectives and contributed to the understanding of how deep learning can be applied to healthcare diagnostics.
